@@ -3,7 +3,7 @@ public class ClaseSingleton {
  
     private ClaseSingleton() {}
 
-    private synchronized static void createInstance() {
+    private static void createInstance() {
         if (instanciaUnica == null) { 
             instanciaUnica = new ClaseSingleton();
         }
